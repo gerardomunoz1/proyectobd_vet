@@ -1,0 +1,13 @@
+
+---Cambio en la tabla mascota
+
+alter table mascota drop constraint mascota_ibfk_1;
+
+alter table mascota add constraint mascota_ibfk_1 foreign key (id_dueno) references dueno(id_dueno );
+
+---cambio en tabla especie
+
+alter table especie drop nom_esp;
+
+alter table especie add nom_esp char(50) not null;
+

@@ -1,0 +1,5 @@
+create user 'vet'@'localhost' identified by 'vet';
+
+grant all privileges on veterinaria.* to 'vet'@'localhost';
+
+flush privileges;
